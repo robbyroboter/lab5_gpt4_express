@@ -1,0 +1,187 @@
+GET http://localhost:5001/api/cms/header
+Accept: application/json
+
+###
+
+POST http://localhost:5001/api/cms/header
+Content-Type: application/json
+
+{"logoData":{"alt":"logo","src":"./assets/img/logo.svg","href":"#"},"menuData":[{"title":"Главная","href":"#"},{"title":"Что такое GPT?","href":"#"},{"title":"Open AI","href":"#"},{"title":"Кейсы","href":"#"},{"title":"Библиотека","href":"#"}],"buttonsData":[{"title":"Войти","href":"#","isPrimary":false},{"title":"Регистрация","href":"#","isPrimary":true}]}
+
+###
+
+//Vr
+GET http://localhost:5001/api/cms/vr
+Accept: application/json
+
+###
+
+POST http://localhost:5001/api/cms/vr
+Content-Type: application/json
+
+{"womanImage": {
+  "src": "./assets/img/vr.png",
+  "alt": "vr_woman"
+},
+
+  "text":
+  "Запроси ранний доступ",
+
+  "header":
+  "Превосходя все ожидания",
+
+  "content":
+  "Однако кровать для помощи в путешествии неприятна. Не мысли все осуществляют благословение. Снисхождение ко всему, радость, изменение бурной привязанности. Вечеринку мы лет на заказ разрешили."
+}
+
+###
+
+//Purple
+
+GET http://localhost:5001/api/cms/purple
+Accept: application/json
+
+###
+
+POST http://localhost:5001/api/cms/purple
+Content-Type: application/json
+
+{"text": "Запросите ранний доступ",
+  "header": "Зарегистрируйтесь и начните исследовать безграничные возможности.",
+  "purpleCtaButtons": {
+    "type": "button",
+    "title": "Начать"
+  }}
+
+###
+
+//Happens_blog
+
+GET http://localhost:5001/api/cms/happens
+Accept: application/json
+
+###
+
+POST http://localhost:5001/api/cms/happens
+Content-Type: application/json
+
+{"header": "Многое Происходит, Мы Ведем об Этом Блог.",
+  "blog__item__large": {
+    "image": {
+      "src": "./assets/img/blog/first_blog.png",
+      "alt": "one blog"
+    },
+    "text": "Сент 26, 2021",
+    "header": "GPT-3 и Openai – это будущее. Давайте разберемся, как это?"
+  },
+  "blog__small": [
+    {
+      "image": {
+        "src": "./assets/img/blog/second_blog.png",
+        "alt": "two blog"
+      },
+      "text": "Сент 26, 2021",
+      "header": "GPT-3 и Openai – это будущее. Давайте разберемся, как <br/> это?"
+    },
+    {
+      "image": {
+        "src": "./assets/img/blog/third_blog.png",
+        "alt": "three blog"
+      },
+      "text": "Сент 26, 2021",
+      "header": "GPT-3 и Openai – это будущее. Давайте разберемся, как <br/> это?"
+    },
+    {
+      "image": {
+        "src": "./assets/img/blog/fourth_blog.png",
+        "alt": "four blog"
+      },
+      "text": "Сент 26, 2021",
+      "header": "GPT-3 и Openai – это будущее. Давайте разберемся, как <br/> это?"
+    },
+    {
+      "image": {
+        "src": "./assets/img/blog/fifth_blog.png",
+        "alt": "five blog"
+      },
+      "text": "Сент 26, 2021",
+      "header": "GPT-3 и Openai – это будущее. Давайте разберемся, как <br/> это?"
+    }
+  ]}
+
+###
+
+//Footer
+
+GET http://localhost:5001/api/cms/footer
+Accept: application/json
+
+###
+
+POST http://localhost:5001/api/cms/footer
+Content-Type: application/json
+
+{"header": "Хотите Шагнуть в Будущее Раньше Других?",
+  "footerCtaButtons": {
+    "type": "button",
+    "title": "Запросить ранний доступ"
+  },
+  "image": {
+    "src": "./assets/img/logo.svg",
+    "alt": "gpt-3"
+  },
+  "gpt3": [
+    {
+      "text": "ул. Профессора Поздеева, 13, к.Г, <br/>Пермь, Пермский край, 614013"
+    },
+    {
+      "text": "Все права защищены"
+    }
+  ],
+  "ssilki": [
+    {
+      "href": "/ssilki",
+      "title": "Овероны"
+    },
+    {
+      "href": "/ssilki",
+      "title": "Соц.сети"
+    },
+    {
+      "href": "/ssilki",
+      "title": "Счётчики"
+    },
+    {
+      "href": "/ssilki",
+      "title": "Контакты"
+    }
+  ],
+  "company": [
+    {
+      "href": "/company",
+      "title": "Условия использования"
+    },
+    {
+      "href": "/company",
+      "title": "Перс.данные"
+    },
+    {
+      "href": "/company",
+      "title": "Контакты"
+    }
+  ],
+  "contacts": [
+    {
+      "text": "ул. Профессора <br/> Поздеева, 13, к.Г, Пермь"
+    },
+    {
+      "text": "+7 (342) 2-198-520"
+    },
+    {
+      "text": "info@pstu.ru"
+    }
+  ],
+  "copyrightText": "© 2023 GPT-3. Все права защищены."
+}
+
+###
